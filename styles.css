@@ -1,0 +1,136 @@
+body {
+  font-family: Calibri, sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+}
+
+.review {
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative; /* Keeps bookmark positioning relative to the review */
+}
+
+.review-header {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+}
+
+.review-header h3 {
+  margin: 1;
+  font-size: 1.2em; /* Adjust the size if needed */
+  font-weight: bold; /* Make the reviewer name stand out */
+  margin-right: 7px; /* Adjust spacing to the right of the name */
+}
+
+.review-header span {
+  margin-right: 7px; /* Adjust spacing between elements */
+}
+
+.review-header .name {
+  color: #007BFF; /* Adjust the color for the site name */
+  font-weight: bold;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.date {
+  font-size: 0.97em;
+  color: #700;
+}
+
+.rating {
+  margin-bottom: 14px;
+}
+
+.highlight {
+  cursor: pointer;
+}
+
+.highlight.positive { background-color: #D9F2DD; }
+.highlight.negative { background-color: #F2DBD9; }
+.highlight.mixed { background-color: #D3F2F0; }
+.highlight.neutral { background-color: #F5F7D9; }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.star-rating {
+  margin-top: 4px;
+  text-align: left;
+  margin-bottom: 7px; 
+}
+
+.star-rating .stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px; /* Space between stars and rating text */
+}
+
+.star {
+  font-size: 20px; /* Adjust the size of the stars */
+  color: gold; /* Adjust the color of the stars */
+}
+
+.star.full {
+  color: gold; /* Full star color */
+}
+
+.star.half {
+  color: gold; /* Half star color */
+}
+
+.star.empty {
+  color: lightgray; /* Empty star color */
+}
+
+.star-rating .rating-text {
+  font-size: 14px; /* Adjust the size of the rating text */
+  color: #333; /* Adjust the color of the rating text */
+}
+
+/* Bookmark styles */
+.bookmark {
+    cursor: pointer;
+    font-size: 23px;
+    margin-left: auto;
+    color: gray;
+    transition: color 0.3s ease;
+}
+  
+.bookmark.bookmarked {
+    color: gold;
+}
+
+.reviewer_name .name {
+  margin-left: 5px; /* Adjust the margin to control spacing */
+}
